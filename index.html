@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&amp;display=swap" rel="stylesheet">
+    <title>Zaio - Color Picker App</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="page container bg-white w-75">
+        <h1 class="page-title pt-3">HICKIES Originals</h1>
+        <div class="row py-3">
+            <div class="col-6">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+            <div class="col-6">
+                <span class="text-muted small">1,293 reviews</span>
+            </div>
+        </div>
+        <div class="row justify-content-start pb-3">
+            <div class="col-3">
+                <span class="price-display">$14.00</span>
+            </div>
+            <div class="col-3">
+                <span class="text-muted">$17.99</span>
+            </div>
+            <div class="col-3">
+                <span class="text-muted">15% Sale</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container py-2">
+                ONLINE EXCLUSIVE
+            </div>
+
+        </div>
+        <div class="color-picker py-3">
+            <div class="color-picker-header">
+                <h2 class="color-picker-title">COLOR: <span></span></h2>
+            </div>
+            <div class="color-picker-body">
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Blue" data-color-value="#0d6efd" style="background-color: rgb(13, 110, 253);"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Indigo" data-color-value="#6610f2" style="background-color: rgb(102, 16, 242);"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Purple" data-color-value="#6f42c1" style="background-color: rgb(111, 66, 193);"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Pink" data-color-value="#d63384" style="background-color: rgb(214, 51, 132);"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Red" data-color-value="#dc3545" style="background-color: rgb(220, 53, 69);"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Orange" data-color-value="#fd7e14" style="background-color: rgb(253, 126, 20);"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Yellow" data-color-value="#ffc107" style="background-color: rgb(255, 193, 7);"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Teal" data-color-value="#20c997" style="background-color: rgb(32, 201, 151);"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Cyan" data-color-value="#0dcaf0" style="background-color: rgb(13, 202, 240);"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Gray" data-color-value="#6c757d" style="background-color: rgb(108, 117, 125);"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Gray Dark" data-color-value="#343a40" style="background-color: rgb(52, 58, 64);"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Success" data-color-value="#198754" style="background-color: rgb(25, 135, 84);"></div>
+                </div>
+                <div class="color-box">
+                    <div class="color-item" data-color-name="Dark" data-color-value="#212529" style="background-color: rgb(33, 37, 41);"></div>
+                </div>   
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <h5>Size guide</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <h5>Your custom fit</h5>
+            </div>
+        </div>
+        <div class="row border-bottom border-dark justify-content-start pb-3">
+            <div class="col-2">
+                <input type="text" id="checkout-quantity-value" class="form-control form-control-lg display-inline-block rounded-pill" value="0" readonly="">
+            </div>
+            <div class="col-8">
+                <input type="button" id="checkout-button" class="btn btn-dark form-control btn-lg rounded-pill" value="Add to Cart" data-bs-toggle="modal" data-bs-target="#quantity-control-modal" disabled="disabled">
+            </div>
+
+        </div>
+        <div class="row border-bottom border-dark pb-3">
+            <div class="container">
+                <h2>Details</h2>
+                <div class="purchased-items"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a href="#" class="text-dark">Need Help?</a>
+            </div>
+            <div class="col-12">
+                <a href="#" class="text-dark">Shipping &amp; Returns</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="quantity-control-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="quantity-control-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="quantity-control-modal-label">Please add the quantity of the item you
+                        have selected</h5>
+                </div>
+                <div class="modal-body border-0">
+                    <form>
+                        <input type="hidden" value="0" id="quantity-control-hidden-value">
+                        <div class="quantity-control-widget">
+                            <span id="quantity-control-item-name-display"></span>
+                            <button type="button" id="quantity-control-minus-button" class="quantity-control-button quantity-control-minus-button"></button>
+                            <span id="quantity-control-value-display">0</span>
+                            <button type="button" id="quantity-control-plus-button" class="quantity-control-button quantity-control-plus-button"></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" id="confirm-quantity-button" class="btn btn-success">Agree</button>
+                    <button type="button" id="cancel-quantity-button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
