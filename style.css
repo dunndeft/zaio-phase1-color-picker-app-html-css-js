@@ -1,0 +1,102 @@
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.4rem;
+}
+
+.page {
+    min-height: 100% !important;
+}
+
+.color-picker-body,
+.purchased-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color-box,
+.purchased-item-box {
+    width: 34px;
+    height: 34px;
+}
+
+.color-item,
+.purchased-item {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    border-radius: 12px;
+}
+
+.color-item.active:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 17px;
+    border: 2px solid gray;
+}
+
+.quantity-control-button {
+    width: 64px;
+    height: 64px;
+    position: relative;
+
+    border-radius: 32px;
+    display: inline;
+    border: none;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.quantity-control-button:focus {
+    outline: none;
+}
+
+.quantity-control-minus-button {
+    background-image: url("images/minus-sign.svg");
+}
+
+.quantity-control-plus-button {
+    background-image: url("images/plus-sign.svg");
+}
+
+.quantity-control-widget {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#quantity-control-item-name-display {
+    margin-right: 8px;
+}
+
+#quantity-control-value-display {
+    margin: 0 16px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.page-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+}
+
+.price-display {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #d05567;
+}
