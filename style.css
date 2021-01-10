@@ -7,14 +7,14 @@ body {
 body {
     margin: 0;
     padding: 0;
-    background-image: url("images/bg.svg");
+    background-color:#d05567;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 1.4rem;
 }
 
 .page {
-    min-height: 100% !important;
+    min-height: 100%;
 }
 
 .color-picker-body,
@@ -53,11 +53,9 @@ body {
     width: 64px;
     height: 64px;
     position: relative;
-
     border-radius: 32px;
     display: inline;
     border: none;
-
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -67,11 +65,11 @@ body {
 }
 
 .quantity-control-minus-button {
-    background-image: url("images/minus-sign.svg");
+    background-image: url("https://www.flaticon.com/svg/static/icons/svg/992/992683.svg");
 }
 
 .quantity-control-plus-button {
-    background-image: url("images/plus-sign.svg");
+    background-image: url("https://www.flaticon.com/svg/static/icons/svg/992/992651.svg");
 }
 
 .quantity-control-widget {
