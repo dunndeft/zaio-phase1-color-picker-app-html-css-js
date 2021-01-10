@@ -14,16 +14,11 @@ const quantityControlValueDisplay = document.getElementById("quantity-control-va
 const quantityControlItemNameDisplay = document.getElementById("quantity-control-item-name-display");
 const cancelQuantityButton = document.getElementById("cancel-quantity-button");
 const purchasedItems = document.querySelector('.purchased-items');
-
 const checkoutQuantity = document.getElementById("checkout-quantity-value");
-
 const quantityControlMinusButton = document.getElementById("quantity-control-minus-button");
 const quantityControlPlusButton = document.getElementById("quantity-control-plus-button");
 const checkoutButton = document.getElementById("checkout-button");
 const confirmQuantityButton = document.getElementById('confirm-quantity-button');
-
-
-/* HELP functions */
 
 // Deselects the currently selected color item
 const deselectAllSelectedColors = function () {
